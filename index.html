@@ -1,8 +1,23 @@
 <html>
-    <head>
-        <title>This is my first website</title>
-    </head>
-    <body>
-        <h1>Dinesh Roy GPS</h1>
-    </body>
+<body>
+<img src="off.png" id="img">
+<button onclick="fun1()" id="btn">Off</button>
+
+<script>
+function fun1(){
+let img=document.getElementById("img")
+let btn=document.getElementById("btn")
+if(img.src.includes('off.png')){
+img.src='on.png'
+btn.innerHTML='On'
+}else{
+img.src='off.png'
+btn.innerHTML='off'
+}
+
+}
+
+
+</script>
+</body>
 </html>
